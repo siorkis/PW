@@ -1,0 +1,246 @@
+/* add your CSS here */
+
+/*main container stiles*/
+.MainContainer {
+	background-image: url(../lab1/src/img/main_bag.png);
+	background-size: cover; 
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 53vw;
+}
+
+
+.MainInfo1{
+	max-width: 40%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 6vw;
+	align-items: center;
+}
+
+.MainTitle{
+	color: #FF5349;
+	font-size: 6vw;
+	text-align: center;
+}
+
+.MainText{
+	font-size: 1vw;
+	max-width: 80%;
+	text-align: center;
+}
+
+.MainButtons{
+	display: flex;
+	justify-content: space-between;
+	width: 18vw;
+	margin-top: 1.5vw;
+}
+
+.ShopBtn{
+	background-color: #FF5349;
+	color: #e0d2c3;
+	border-radius: 20px;
+	width: 8vw;
+	height: 1.5vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
+}
+
+.LearnBtn{
+	color: #FF5349;
+	border-radius: 20px;
+	width: 8vw;
+	height: 1.5vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
+}
+
+.MainSide{
+	transform: rotate(90deg);
+	margin-top: -2vw;
+	color: #e0d2c3;
+	font-size: 3vw;
+}
+
+
+/*items to but container stiles*/
+.ItemsToBuyContainer {
+	background-image: url(../lab1/src/img/buy_main.png);
+	background-size: cover; 
+	width: 100vw;
+	display: flex;
+	
+	align-items: center;
+	height: 53vw;
+	flex-direction: column;
+}
+
+.MainBuy{
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.TitleBuy{
+	color: #FF5349;
+	font-size: 9vw;
+	text-align: center;
+}
+
+.MainTetxBuy{
+	color: black;
+	margin-top: 2vw;
+	font-size: 1.25vw;
+	text-align: center;
+	width: 40vw;
+}
+
+.ItemsProducts{
+	margin-top: 2vw;
+	width: 70vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ItemProduct{
+	width: 20vw;
+	height: 20vw;
+	border: 3px solid black;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ItemProduct img {
+	width: 7vw;
+}
+
+
+
+.ItemInfo {
+	margin-top: 1vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ItemName {
+	font-weight: bold;
+
+}
+
+.ItemPrice {
+	color: #FF5349;
+}
+
+.ItemBtn {
+	background-color: #FF5349;
+	border-radius: 20px;
+	height: 2.5vw;
+	width: 8vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border: 2px solid black;
+}
+
+
+/*promise container stiles*/
+.PromiseContainer {
+	background-image: url(../lab1/src/img/promise_main.png);
+	background-size: cover; 
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	height: 45vw;
+	flex-direction: column;
+}
+
+.PromiseHead {
+	color: black;
+	text-align: center;
+	margin-top: 2vw;
+	font-size: 4vw;
+	margin-top: 3vw;
+}
+
+.PromiseTitle {
+	color: white;
+	font-size: 8vw;
+	margin-top: 2vw;
+	width: 70vw;
+	text-align: center;
+}
+
+.PromiseMain {
+	color: white;
+	margin-top: 4vw;
+	font-size: 1vw;
+	width: 30vw;
+	text-align: center;
+}
+
+
+.PromiseBtn {
+	background-color: white;
+	color: #FF5349;
+	border-radius: 15px;
+	height: 2.5vw;
+	width: 8vw;
+	margin-top: 3vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+
+/*faq container stiles*/
+.FaqsContainer {
+	background-image: url(../lab1/src/img/faqs_main.png);
+	background-size: cover; 
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	height: 45vw;
+}
+
+.FaqTitle {
+	color: white;
+	font-size: 8vw;
+	margin-top: 2vw;
+	margin-left: 15vw;
+}
+
+.Questions {
+	margin-left: 15vw;
+	margin-top: 3vw;
+
+}
+
+.Question {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1vw;
+	font-size: 1.5vw;
+	width: 40%;
+}
+
+.Question::after {
+	position: absolute;
+	width: 37%;
+	margin-top: 2vw;
+	height: 1.5px;
+	background-color: white;
+	content: '';
+}
