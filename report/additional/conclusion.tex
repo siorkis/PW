@@ -1,0 +1,397 @@
+\chapter*{Work}
+During this laboratory work I worked with HTML, CSS and Figma in order to achieve maximum compliance with the mockup provided.
+Also I enhanced my knowledge and skills in HTML and CSS.
+I implemented all tasks besides bonus task.
+
+\section{Groceries On the go.}
+HTML code:
+\begin{verbatim}
+    <div class="GroceriesOnTheGoBlock" id="Groceries">
+        <div class="GroceriesInfo">
+            <div class="GroceriesTitle">
+                Groceries On the Go.
+            </div>
+            <div class="GroceriesText">
+                Bluu Grocer Mart propises qualityfood products thet are ethically sourced, fresh and ccarefully picked for our costumers. Our products range from meat, vegetables to fruits that you will definitely enjoy.
+            </div>
+            <div class="GroceriesBtn">
+                <div class="ShopNowBtn">
+                    Shop Now
+                </div>
+                <div class="LearnMoreBtn">
+                Learn More
+                </div>
+            </div>
+            
+        </div>
+        <div class="GroceriesSideText">
+            Quality Products, Made Everyday
+        </div>
+    </div>
+\end{verbatim}
+CSS code:
+\begin{verbatim}
+    
+.GroceriesOnTheGoBlock{
+    background-image: url(../img/4bghdr.png);
+    background-size: cover;
+    width : 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 53vw;
+}
+
+.GroceriesInfo{
+    max-width: 40%;
+    display : flex;
+    flex-direction: column;
+    margin-left: 9vw;
+    align-items: center;
+}
+
+.GroceriesTitle{
+    color: orangered;
+    font-size: 8vw;
+    text-align: center;
+}
+
+.GroceriesText{
+    font-size: 1vw;
+    max-width: 80%;
+    text-align: center;
+}
+
+.GroceriesBtn{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    margin-top: 1vw;
+}
+
+.ShopNowBtn{
+    background-color: orangered;
+    color: #e0d2c3;
+    border-radius: 20px;
+    width: 9vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+.LearnMoreBtn{
+    color: orangered;
+    border-radius: 20px;
+    width: 9vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+.GroceriesSideText{
+    transform: rotate(90deg);
+    margin-top: -2vw;
+    color: #e0d2c3;
+    font-size: 2vw;
+}
+\end{verbatim}
+
+\section{Locally sourced block.}
+HTML code:
+\begin{verbatim}
+    <div class="LocalSourceBlock" id="Local">
+        <div class="Promise">
+            OUR PROMISE
+        </div>
+        <div class="LocalSourceHead">
+            Locally sources products.
+        </div>
+        <div class="LocalSourceDescription">
+            Bluu Grocer Mart propises qualityfood products thet are ethically sourced, fresh and ccarefully picked for our costumers. Our products range from meat, vegetables to fruits that you will definitely enjoy.
+        </div>
+        <div class="LocalButton">
+            Learn More
+        </div>
+    </div>
+\end{verbatim}
+CSS code:
+\begin{verbatim}
+    
+.LocalSourceBlock{
+    background-image: url(../img/page_223.png);
+    background-size: cover;
+    width : 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vw;
+}
+
+.Promise{
+    color: black;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.LocalSourceHead{
+    color: #e0d2c3;
+    font-size: 8vw;
+    width: 70vw;
+    text-align: center;
+}
+
+.LocalSourceDescription{
+    margin-top: 2vw;
+    color:#e0d2c3;
+    font-size: 1vw;
+    width: 30vw;
+    text-align: center;
+}
+
+.LocalButton{
+    margin-top: 1vw;
+    background-color:#e0d2c3;
+    color:orangered;
+    border-radius: 10px;
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+\end{verbatim}
+
+\section{Simple block.}
+HTML code:
+\begin{verbatim}
+    <div class="SimpleBlock Line" id="Simple">
+        <div class="SimpleTitle">
+            Made Simple
+        </div>
+        <div class="SimpleText">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inc-ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex-ercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div class="SimpleProd">
+            <div>
+                <div class="ProductImg">
+                    <img src="img/page_150.png">
+                </div>
+                <div class="Product">
+                    <div class="Productinfo">
+                        <div class="ProductName">
+                            Prodcut Name
+                        </div>
+                        <div class="ProductPrice">
+                            $00000
+                        </div>
+                    </div>
+                    <div class="ProductBtn">
+                        Add to cart
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ProductImg">
+                    <img src="img/page_154.png">
+                </div>
+                <div class="Product">
+                    <div class="Productinfo">
+                        <div class="ProductName">
+                            Prodcut Name
+                        </div>
+                        <div class="ProductPrice">
+                            $00000
+                        </div>
+                    </div>
+                    <div class="ProductBtn">
+                        Add to cart
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ProductImg">
+                    <img src="img/page_152.png">
+                </div>
+                <div class="Product">
+                    <div class="Productinfo">
+                        <div class="ProductName">
+                            Prodcut Name
+                        </div>
+                        <div class="ProductPrice">
+                            $00000
+                        </div>
+                    </div>
+                    <div class="ProductBtn">
+                        Add to cart
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+\end{verbatim}
+CSS code:
+\begin{verbatim}
+    
+.Line{
+    margin-top: 0.25vw;
+    background-color: black;
+}
+
+.SimpleBlock{
+    background-image: url(../img/page_191.png);
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 55vw;
+}
+
+.SimpleTitle{
+    color: orangered;
+    font-size: 7vw;
+    text-align: center;
+}
+
+.SimleText{
+    margin-top: 3vw;
+    color: black;
+    font-size: 1;
+    text-align: center;
+    width: 40vw;
+}
+
+.SimpleProd{
+    margin-top: 3vw;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProductImg{
+    width: 18vw;
+    height: 18vw;
+    border: 3px solid black;
+    border-radius: 30px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductImg img{
+    width: 7vw;
+}
+
+.Product{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProductPrice{
+    color: orangered;
+}
+
+.ProductName{
+    font-weight: bold;
+}
+
+.ProductBtn{
+    background-color: orangered;
+    border-radius: 20px;
+    height: 2vw;
+    width: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border: 2px solid black;
+}
+\end{verbatim}
+
+\section{FAQS block.}
+HTML code:
+\begin{verbatim}
+    
+    <div class="FAQBlock" id="FAQ's">
+        <div class="FAQHead">
+            FAQs
+        </div>
+        <div class="QuestionsBlock">
+            <div class="Question">
+                Do you accept credit card payment?
+                <div>
+                    +
+                </div>
+            </div>    
+            <div class="Question">
+                What's yur refund policy
+                <div>
+                    +
+                </div>
+            </div>    
+            <div class="Question">
+                How do deliveries word?
+                <div>
+                    +
+                </div>
+            </div>    
+            <div class="Question">
+                Do you offer contactless deliveries?
+                <div>
+                    +
+                </div>
+            </div>    
+        </div>
+
+    </div>
+\end{verbatim}
+
+CSS code:
+\begin{verbatim}
+    
+.FAQBlock{
+    background-image: url(../img/page_222.png);
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 45vw;
+}
+
+.FAQHead{
+    color: #e0d2c3;
+    font-size: 6vw;
+    margin-top: 3vw;
+    margin-left: 10vw; 
+}
+
+.QuestionsBlock{
+    margin-left: 10vw;
+    margin-top: 3vw;
+}
+
+.Question{
+    color: #e0d2c3;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    width: 40%;
+}
+
+.Question::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    margin-top: 2vw;
+    height: 2px;
+    background-color: #e0d2c3;
+}
+\end{verbatim}

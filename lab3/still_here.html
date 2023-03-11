@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome Page</title>
+    <style>
+	  body {
+	  	background-color: #ededf2;
+	    font-family: Arial, sans-serif;
+	    text-align: center;
+	    color: #1e3791;
+	  }
+	  h1 {
+	    margin-top: 50px;
+	  }
+	  button {
+	    padding: 10px 20px;
+	    font-size: 18px;
+	    background-color: #3153c6;
+	    color: white;
+	    border: none;
+	    border-radius: 4px;
+	    cursor: pointer;
+	  }
+	  button:hover {
+	    background-color: #4e68c2;
+	  }
+	</style>
+  </head>
+  <body>
+    <h1>Do you still here?</h1>
+    <button id="confirm-btn">Yes!</button>
+  </body>
+  <script>
+	  var confirmBtn = document.getElementById('confirm-btn');
+	  confirmBtn.addEventListener('click', function() {
+	    window.location.href = 'index.html';
+	  });
+  </script>
+
+</html>
