@@ -12,7 +12,6 @@ const btnUpload = document.getElementById("btnUpload");
 let rotationDirection = 1;
 
 document.addEventListener("DOMContentLoaded", getLocalTodos); // load from local storage
-document.addEventListener("DOMContentLoaded", getLocalComplete); // load from local storage 
 
 add_btn.addEventListener("click", addTodo);
 todo_list.addEventListener("click", deleteCheck);
@@ -24,25 +23,9 @@ btnUpload.addEventListener("click", uploadTodo);
 
 var audio = new Audio('reminder_sound.mp3');
 
-// alert("Welcome back! Interesting, how many tasks will be completed today?");
 setTimeout(function() {
    	audio.play();
 }, 5000);
-
-
-// setTimeout(function() {
-//    	window.location.href = "still_here.html";
-// }, 10000);
-
-// onbeforeunload = (event) => { 
-// 	todo_childrens = todo_list.getElementsByClassName("completed");
-
-// 	for (i = 0; i < todo_childrens.length; ++i) {
-// 		elem = todo_childrens[i];
-// 		elem.remove();
-// 	}
-// 	return "Are you sure?"; 
-// };
 
 
 
@@ -79,8 +62,6 @@ function deleteCheck(e) {
     if(item.classList[0] === "complete-btn") {
         const todo = item.parentElement;
         todo.classList.toggle("completed");
-        console.log(todo);
-        //saveLocalComplete(todo.outerText);
     }
 }
 
@@ -136,28 +117,6 @@ function getLocalTodos() {
 }
 
 
-function saveLocalComplete(todo) {
-    let todoCompleted;
-    if(localStorage.getItem("todoCompleted") === null) {
-        todoCompleted = [];
-    } else {
-        todoCompleted = JSON.parse(localStorage.getItem("todoCompleted"));
-    }
-    todoCompleted.push(todo);
-    localStorage.setItem("todoCompleted", JSON.stringify(todoCompleted));
-}
-
-function getLocalComplete() {
-    let todoCompleted;
-    if(localStorage.getItem("todoCompleted") === null) {
-        todoCompleted = [];
-    } else {
-        todoCompleted = JSON.parse(localStorage.getItem("todoCompleted"));
-    }
-    todoCompleted.forEach(function(todo) { todoContent(todo, true); });
-}
-
-
 function copyTodo() {
 	console.log("enter");
 	let todoList;
@@ -165,20 +124,18 @@ function copyTodo() {
 
 	todoList = JSON.parse(localStorage.getItem("todos"));
 	todoList = todoList.toString();
-	// copy_value = window.btoa(todoList);
 	copy_value = btoa(unescape(encodeURIComponent(todoList)));
 	
 	navigator.clipboard.writeText(copy_value);
-	console.log(copy_value);
 	console.log('Content copied to clipboard');
 }
 
 function uploadTodo() {
 	let code = prompt("Please enter the code:");
-	console.log(decodeURIComponent(escape(window.atob(code))));
+	// console.log(decodeURIComponent(escape(window.atob(code))));
 	let todo_value = decodeURIComponent(escape(window.atob(code)));
 	let todo_array = todo_value.split(",");
-	console.log(todo_array);
+	// console.log(todo_array);
 	todo_array.forEach(saveLocalTodos);
 	location.reload();
 }
@@ -190,7 +147,6 @@ function todoContent(value, bool=false) {
     
     
     new_todo.innerText = value; 
-    //console.log((value.match(/!/g) || []).length);
     let priority = (value.match(/!/g) || []).length;
     switch(priority) {
     	case 0:
