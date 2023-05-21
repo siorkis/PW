@@ -26,7 +26,8 @@ def start_command(chat_id):
 def help_command(chat_id):
     method = "sendMessage"
     url = f"https://api.telegram.org/bot{TOKEN}/{method}"
-    data = {"chat_id": chat_id, "text": 'Try typing anything and I will do my best to respond!'}
+    data = {"chat_id": chat_id, "text": 'Use "/latest", "/save", "/saved" to perform basic interaction with me! \
+                                         \nAlso could try "/latest_bbc" and "/saved_bbc" for specifying author (BBC News)' }
     requests.post(url, data=data)
 
 def save_news(chat_id):
@@ -77,7 +78,6 @@ def latest_news(chat_id):
     data = {"chat_id": chat_id, "text": text}
     requests.post(url, data=data)
 
-
 def show_news(chat_id):
   cur.execute("""select * from news""")
   response = cur.fetchall()
@@ -87,7 +87,6 @@ def show_news(chat_id):
       content = "\nContent: " + row[3]
       message = source + title + content
       send_message(chat_id, message)
-
 
 def saved_bbc(chat_id):
     cur.execute("""select * from news where source = 'BBC News';""")
@@ -123,7 +122,6 @@ def latest_bbc(chat_id):
     data = {"chat_id": chat_id, "text": text}
     requests.post(url, data=data)
 
-
 def news_printer(response, iterator):
         # header = f"\n-----------------news {iterator}--------------------"
         source = "\nSource: " + response.json()["articles"][iterator]["author"]
@@ -140,8 +138,6 @@ def news_printer(response, iterator):
 def process():
     # print(request.json)
     chat_id = request.json["message"]["chat"]["id"]
-    
-
     text = request.json["message"]["text"]
     print(text)
     if text == "/start":
